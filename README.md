@@ -1,3 +1,6 @@
 source .venv/bin/activate
 
 pip install searoute
+
+
+"AAPTxy8BH1VEsoebNVZXo8HurJ4OtrIn0er_IZWYxlE4RtW8u6P1z7B3ah8P3TOhJIqvI701l8IsWNaTzxE3UUVjMeAFBwxGqyUPaJCOO-7aIFECet3csLjfzQJhvt0SHFsomEsjX0lOxXR3qO3uu17gN_YEYCpBUWrjikzbBRpY-Eq7PE6f30mxno58y7cHM-kMX-p_jOk1_TPuQYhSna3JEidGX26I-DzkWuB-FBB2Zq4.AT1_bOok1pTC",

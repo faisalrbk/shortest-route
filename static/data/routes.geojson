@@ -1,0 +1,1155 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "pair_number": 1,
+        "origin": "Bluff",
+        "destination": "Alanya",
+        "distance_nm": 9319.655560885081,
+        "distance_km": 17260.00209875917
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            168.36667,
+            -46.61667
+          ],
+          [
+            32.0,
+            36.53333
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "pair_number": 2,
+        "origin": "Abonnema",
+        "destination": "Bridport (Aus)",
+        "distance_nm": 8413.226535478014,
+        "distance_km": 15581.295543705282
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            6.76667,
+            4.73333
+          ],
+          [
+            147.401821,
+            -41.010088
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "pair_number": 3,
+        "origin": "Arlington",
+        "destination": "Aqaba",
+        "distance_nm": 10925.814472916314,
+        "distance_km": 20234.608403841015
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -120.18333,
+            45.71667
+          ],
+          [
+            35.01667,
+            29.51667
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "pair_number": 4,
+        "origin": "Antalya",
+        "destination": "Alloa",
+        "distance_nm": 3482.6492358148,
+        "distance_km": 6449.86638472901
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            30.61667,
+            36.83333
+          ],
+          [
+            -3.8,
+            56.1
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "pair_number": 5,
+        "origin": "Bridgeport (Connecticut)",
+        "destination": "Akutan",
+        "distance_nm": 7421.127336934771,
+        "distance_km": 13743.927828003196
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.18333,
+            41.15
+          ],
+          [
+            -165.75,
+            54.13333
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "pair_number": 6,
+        "origin": "Boothbay Harbor",
+        "destination": "Bridlington",
+        "distance_nm": 3041.6175849730726,
+        "distance_km": 5633.075767370131
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -69.65,
+            43.83333
+          ],
+          [
+            -0.18333,
+            54.08333
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "pair_number": 7,
+        "origin": "Cam Pha",
+        "destination": "Bella Coola",
+        "distance_nm": 6198.510153103857,
+        "distance_km": 11479.640803548344
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            107.36667,
+            21.01667
+          ],
+          [
+            -126.793785,
+            52.376311
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "pair_number": 8,
+        "origin": "Akcay",
+        "destination": "Bethel",
+        "distance_nm": 11725.168833385036,
+        "distance_km": 21715.012679429088
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            26.9,
+            39.58333
+          ],
+          [
+            -161.76667,
+            60.8
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "pair_number": 9,
+        "origin": "Bandar-E Lengeh",
+        "destination": "Abu Kir",
+        "distance_nm": 3128.705037792468,
+        "distance_km": 5794.3617299916505
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            54.88333,
+            26.55
+          ],
+          [
+            30.06667,
+            31.3
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "pair_number": 10,
+        "origin": "Abu Ghosoun",
+        "destination": "Akko",
+        "distance_nm": 694.8985135149028,
+        "distance_km": 1286.9520470296
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            35.206064,
+            24.452858
+          ],
+          [
+            35.06667,
+            32.91667
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "pair_number": 11,
+        "origin": "Annay Sous Lens",
+        "destination": "Antwerp",
+        "distance_nm": 83.79684235134556,
+        "distance_km": 155.19175203469197
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            2.86667,
+            50.46667
+          ],
+          [
+            4.41139,
+            51.24472
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "pair_number": 12,
+        "origin": "Bayside",
+        "destination": "Biawak",
+        "distance_nm": 10463.30207135508,
+        "distance_km": 19378.035436149607
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -67.142066,
+            45.159313
+          ],
+          [
+            110.4,
+            1.55
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "pair_number": 13,
+        "origin": "Abu Al Bukhoosh",
+        "destination": "Benguela",
+        "distance_nm": 6146.709515247379,
+        "distance_km": 11383.706022238148
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            53.08333,
+            25.46667
+          ],
+          [
+            13.4,
+            -12.58333
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "pair_number": 14,
+        "origin": "Andoany",
+        "destination": "Bratislava",
+        "distance_nm": 4791.491225589126,
+        "distance_km": 8873.841749791061
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            48.28333,
+            -13.4
+          ],
+          [
+            17.134989,
+            48.13633
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "pair_number": 15,
+        "origin": "Bogo",
+        "destination": "Bourg",
+        "distance_nm": 10614.448179320176,
+        "distance_km": 19657.958028100966
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            124.0,
+            11.05
+          ],
+          [
+            -90.6,
+            29.55
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "pair_number": 16,
+        "origin": "Bella Coola",
+        "destination": "Bandar Seri Begawan",
+        "distance_nm": 6589.786484806484,
+        "distance_km": 12204.28456986161
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -126.793785,
+            52.376311
+          ],
+          [
+            114.93333,
+            4.9
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "pair_number": 17,
+        "origin": "Anoa Natuna",
+        "destination": "Barents Island",
+        "distance_nm": 9857.232827531607,
+        "distance_km": 18255.595196588536
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            105.6,
+            5.23333
+          ],
+          [
+            21.83333,
+            78.58333
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "pair_number": 18,
+        "origin": "Berwick-Upon-Tweed",
+        "destination": "Arroyo Barril",
+        "distance_nm": 3833.9890025052136,
+        "distance_km": 7100.547632639656
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -2.0,
+            55.76667
+          ],
+          [
+            -69.43333,
+            19.2
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "pair_number": 19,
+        "origin": "Burevestnik",
+        "destination": "Cairo",
+        "distance_nm": 8531.780504357512,
+        "distance_km": 15800.857494070113
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            147.61667,
+            44.95
+          ],
+          [
+            31.25,
+            30.05
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "pair_number": 20,
+        "origin": "Aalesund",
+        "destination": "Brohl",
+        "distance_nm": 667.5362719580127,
+        "distance_km": 1236.2771756662396
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            6.16667,
+            62.46667
+          ],
+          [
+            7.323963,
+            50.490154
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "pair_number": 21,
+        "origin": "Burcht",
+        "destination": "Amal",
+        "distance_nm": 541.0566792942132,
+        "distance_km": 1002.0369700528828
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            4.33333,
+            51.2
+          ],
+          [
+            12.71667,
+            59.05
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "pair_number": 22,
+        "origin": "Bou Grara",
+        "destination": "Bandar-E Lengeh",
+        "distance_nm": 4090.4957602753984,
+        "distance_km": 7575.598148030038
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            10.66667,
+            33.5
+          ],
+          [
+            54.88333,
+            26.55
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "pair_number": 23,
+        "origin": "Ayr",
+        "destination": "Arroyo Barril",
+        "distance_nm": 3748.807051573486,
+        "distance_km": 6942.790659514097
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -4.63333,
+            55.46667
+          ],
+          [
+            -69.43333,
+            19.2
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "pair_number": 24,
+        "origin": "Alvarado",
+        "destination": "Annan",
+        "distance_nm": 4863.111942897157,
+        "distance_km": 9006.483318245535
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -95.76667,
+            18.76667
+          ],
+          [
+            -3.26667,
+            54.98333
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "pair_number": 25,
+        "origin": "Caripito",
+        "destination": "Broome",
+        "distance_nm": 11108.25211521584,
+        "distance_km": 20572.482917379737
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -63.03333,
+            10.15
+          ],
+          [
+            122.23361,
+            -17.96194
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "pair_number": 26,
+        "origin": "Axelsvik",
+        "destination": "Akutan",
+        "distance_nm": 11411.668763899623,
+        "distance_km": 21134.4105507421
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            23.38333,
+            65.76667
+          ],
+          [
+            -165.75,
+            54.13333
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "pair_number": 27,
+        "origin": "Akkeshi",
+        "destination": "Balakhna",
+        "distance_nm": 10204.781905993024,
+        "distance_km": 18899.25608989908
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            144.85,
+            43.05
+          ],
+          [
+            43.61667,
+            56.48333
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "pair_number": 28,
+        "origin": "Akrehamn",
+        "destination": "Bagfas-Iskur Fertilizer Jetty",
+        "distance_nm": 3594.964097670393,
+        "distance_km": 6657.873508885568
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            5.174617,
+            59.253015
+          ],
+          [
+            28.53333,
+            40.4
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "pair_number": 29,
+        "origin": "Cabanas",
+        "destination": "Azua",
+        "distance_nm": 845.9448093891654,
+        "distance_km": 1566.6897869887343
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -82.98333,
+            23.0
+          ],
+          [
+            -70.66667,
+            18.41667
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "pair_number": 30,
+        "origin": "Big Creek",
+        "destination": "Arendal",
+        "distance_nm": 4877.302061877652,
+        "distance_km": 9032.763418597411
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -88.4,
+            16.5
+          ],
+          [
+            8.76667,
+            58.46667
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "pair_number": 31,
+        "origin": "Burea",
+        "destination": "Adabiya",
+        "distance_nm": 4636.015815321413,
+        "distance_km": 8585.901289975258
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            21.25,
+            64.61667
+          ],
+          [
+            32.46667,
+            29.86667
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "pair_number": 32,
+        "origin": "Bressay",
+        "destination": "Barrow",
+        "distance_nm": 12876.09773176722,
+        "distance_km": 23846.532999232895
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.08333,
+            60.13333
+          ],
+          [
+            -156.71667,
+            71.31667
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "pair_number": 33,
+        "origin": "Belfast (Gbr)",
+        "destination": "Alexandroupolis",
+        "distance_nm": 3021.158081874061,
+        "distance_km": 5595.184767630761
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -5.93333,
+            54.6
+          ],
+          [
+            25.95,
+            40.85
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "pair_number": 34,
+        "origin": "Cannes",
+        "destination": "Bakkafjordur",
+        "distance_nm": 2831.6026122637386,
+        "distance_km": 5244.128037912444
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            7.01667,
+            43.51667
+          ],
+          [
+            -14.75,
+            66.05
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "pair_number": 35,
+        "origin": "Airlie Island",
+        "destination": "Belyy Island",
+        "distance_nm": 11806.172296420738,
+        "distance_km": 21865.031092971207
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            115.16667,
+            -21.33333
+          ],
+          [
+            70.8,
+            73.51667
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "pair_number": 36,
+        "origin": "Ashtabula",
+        "destination": "Busan",
+        "distance_nm": 12097.539127589223,
+        "distance_km": 22404.642464295244
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -80.81667,
+            41.91667
+          ],
+          [
+            129.06667,
+            35.1
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "pair_number": 37,
+        "origin": "Bitung",
+        "destination": "Binta",
+        "distance_nm": 10017.032165153352,
+        "distance_km": 18551.54356986401
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            125.18333,
+            1.43333
+          ],
+          [
+            -15.31667,
+            12.41667
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "pair_number": 38,
+        "origin": "Caleta Cordova",
+        "destination": "Cagdianao",
+        "distance_nm": 9546.120400446629,
+        "distance_km": 17679.414981627157
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -67.35,
+            -45.71667
+          ],
+          [
+            125.66667,
+            9.9
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "pair_number": 39,
+        "origin": "Bahe",
+        "destination": "Berezniki",
+        "distance_nm": 12521.839726358587,
+        "distance_km": 23190.447173216104
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            115.023952,
+            30.410801
+          ],
+          [
+            56.81667,
+            59.43333
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "pair_number": 40,
+        "origin": "Anchorage",
+        "destination": "Bowen",
+        "distance_nm": 6018.961129312666,
+        "distance_km": 11147.116011487058
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -149.88333,
+            61.21667
+          ],
+          [
+            148.25,
+            -20.01667
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "pair_number": 41,
+        "origin": "Aguadilla",
+        "destination": "Adamas",
+        "distance_nm": 4860.544312334781,
+        "distance_km": 9001.728066444015
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -67.16667,
+            18.36667
+          ],
+          [
+            24.45,
+            36.73333
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "pair_number": 42,
+        "origin": "Boma",
+        "destination": "Antioch",
+        "distance_nm": 9318.549581795432,
+        "distance_km": 17257.953825485143
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            13.05,
+            -5.85
+          ],
+          [
+            -121.81667,
+            38.01667
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "pair_number": 43,
+        "origin": "Brussels",
+        "destination": "Ash Shihr",
+        "distance_nm": 4976.57882196505,
+        "distance_km": 9216.623978279275
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            4.355966,
+            50.869036
+          ],
+          [
+            49.486825,
+            14.690123
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "pair_number": 44,
+        "origin": "Aitape",
+        "destination": "Cabo San Antonio",
+        "distance_nm": 9167.44523396862,
+        "distance_km": 16978.108573309884
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            142.35,
+            -3.13333
+          ],
+          [
+            -56.5,
+            -36.66667
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "pair_number": 45,
+        "origin": "Antwerp",
+        "destination": "Caibarien",
+        "distance_nm": 4216.519128970879,
+        "distance_km": 7808.993426854068
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            4.41139,
+            51.24472
+          ],
+          [
+            -79.46667,
+            22.53333
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "pair_number": 46,
+        "origin": "Akureyri",
+        "destination": "Balakhna",
+        "distance_nm": 4784.247754780537,
+        "distance_km": 8860.426841853556
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -18.05,
+            65.68333
+          ],
+          [
+            43.61667,
+            56.48333
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "pair_number": 47,
+        "origin": "Arroyo Barril",
+        "destination": "Barmouth",
+        "distance_nm": 3641.1250841581864,
+        "distance_km": 6743.363655860961
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -69.43333,
+            19.2
+          ],
+          [
+            -4.05,
+            52.71667
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "pair_number": 48,
+        "origin": "Block Island",
+        "destination": "Butterworth",
+        "distance_nm": 10659.362259163407,
+        "distance_km": 19741.13890397063
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -71.58333,
+            41.23333
+          ],
+          [
+            100.38333,
+            5.4
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "pair_number": 49,
+        "origin": "Bahia Honda",
+        "destination": "Amamapare",
+        "distance_nm": 10183.496677623609,
+        "distance_km": 18859.835846958926
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -83.16667,
+            22.96667
+          ],
+          [
+            136.843914,
+            -4.830819
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "pair_number": 50,
+        "origin": "Baie Verte",
+        "destination": "Baddeck",
+        "distance_nm": 688.8727197832847,
+        "distance_km": 1275.7922770386433
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -56.17786,
+            49.942627
+          ],
+          [
+            -60.746986,
+            46.098831
+          ]
+        ]
+      }
+    }
+  ]
+}
