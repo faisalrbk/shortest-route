@@ -33,6 +33,16 @@
   </head>
   <body>
     <calcite-shell>
+      <calcite-alert
+        id="port-alert"
+        kind="warning"
+        label="Port selection"
+        placement="bottom"
+      >
+        <div slot="message">
+          Both ports selected. Clear one to select a new port.
+        </div>
+      </calcite-alert>
       <calcite-navigation slot="header">
         <calcite-navigation-logo
           heading="Distance Calculator"
@@ -45,17 +55,27 @@
           style="display: flex; gap: 12px; align-items: center"
         >
           <calcite-combobox
-            id="port-selector"
-            placeholder="Select origin & destination ports..."
-            selection-mode="multiple"
-            max-items="8"
-            scale="l"
-            style="width: 500px"
+            id="origin-port"
+            placeholder="Origin port..."
+            selection-mode="single"
+            scale="m"
+            style="width: 220px"
           ></calcite-combobox>
+
+          <calcite-icon icon="arrow-right" scale="m"></calcite-icon>
+
+          <calcite-combobox
+            id="destination-port"
+            placeholder="Destination port..."
+            selection-mode="single"
+            scale="m"
+            style="width: 220px"
+          ></calcite-combobox>
+
           <calcite-button
             id="calculate-btn"
             icon-start="measure-line"
-            scale="l"
+            scale="m"
           >
             Calculate
           </calcite-button>
@@ -63,13 +83,16 @@
       </calcite-navigation>
 
       <arcgis-map id="map" basemap="arcgis/imagery" zoom="4" center="0,20">
-        <arcgis-zoom position="top-left"></arcgis-zoom>
-        <arcgis-locate position="top-left"></arcgis-locate>
-     
         
+            <arcgis-expand slot="top-left" expand-tooltip="Basemap Gallery">
+          <arcgis-basemap-gallery />
+        </arcgis-expand>
+        <arcgis-zoom slot="top-left"></arcgis-zoom>
+        <arcgis-locate slot="top-left"></arcgis-locate>
       </arcgis-map>
     </calcite-shell>
 
     <script src="/static/js/map.js"></script>
+    <script src="/static/js/ports.js"></script>
   </body>
 </html>
