@@ -3,7 +3,7 @@ from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from pathlib import Path
 import uvicorn
-
+from services import PORTS
 app = FastAPI()
 
 app.mount(
@@ -23,6 +23,9 @@ def render(template_name: str, **kwargs) -> str:
 async def index(request: Request):
     return render("index.html", title="Shortest Route")
 
+@app.get("/api/ports")
+async def get_ports():
+    return PORTS
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000, reload=True)
