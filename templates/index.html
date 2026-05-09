@@ -3,11 +3,31 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{{ title }}</title>
+    <title>shortest route</title>
+    <!-- ArcGIS Maps SDK for JavaScript CSS -->
+    <link
+      rel="stylesheet"
+      href="https://js.arcgis.com/4.26/esri/themes/light/main.css"
+    />
+    <!-- Calcite Components CSS (via CDN) -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@esri/calcite-components/dist/calcite/calcite.css"
+    />
+    <!-- App CSS (keeps map fullscreen) -->
+    <link rel="stylesheet" href="/static/css/map.css" />
   </head>
   <body>
-    <h1>{{ message }}</h1>
-    <p>This is the root page rendered with FastAPI's Jinja2 templates.</p>
-    <p>Open the API docs at <a href="/docs">/docs</a>.</p>
+    <div id="viewDiv"></div>
+
+    <!-- ArcGIS Maps SDK for JavaScript -->
+    <script src="https://js.arcgis.com/4.26/"></script>
+    <!-- Calcite Components JS (ES module) -->
+    <script
+      type="module"
+      src="https://unpkg.com/@esri/calcite-components/dist/calcite/calcite.esm.js"
+    ></script>
+    <!-- App JS (initializes the map) -->
+    <script src="/static/js/map.js"></script>
   </body>
 </html>

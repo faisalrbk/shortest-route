@@ -1,6 +1,12 @@
 /* Basic site styles */
 body {
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  font-family:
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial;
   margin: 0;
   padding: 0;
   background: #f7f7f9;
