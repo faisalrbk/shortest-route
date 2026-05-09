@@ -3,31 +3,73 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>shortest route</title>
-    <!-- ArcGIS Maps SDK for JavaScript CSS -->
-    <link
-      rel="stylesheet"
-      href="https://js.arcgis.com/4.26/esri/themes/light/main.css"
-    />
-    <!-- Calcite Components CSS (via CDN) -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/@esri/calcite-components/dist/calcite/calcite.css"
-    />
-    <!-- App CSS (keeps map fullscreen) -->
-    <link rel="stylesheet" href="/static/css/map.css" />
+    <title>Shortest Route</title>
+
+    <!-- Single script — everything included (core + map-components + calcite) -->
+    <script type="module" src="https://js.arcgis.com/5.0/"></script>
+
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+      calcite-shell {
+        height: 100vh;
+      }
+      arcgis-map {
+        display: block;
+        height: 100%;
+        flex: 1;
+      }
+    </style>
+    <script>
+      var esriConfig = {
+        apiKey:
+          "AAPTxy8BH1VEsoebNVZXo8HurJ4OtrIn0er_IZWYxlE4RtW8u6P1z7B3ah8P3TOhJIqvI701l8IsWNaTzxE3UUVjMeAFBwxGqyUPaJCOO-7aIFECet3csLjfzQJhvt0SHFsomEsjX0lOxXR3qO3uu17gN_YEYCpBUWrjikzbBRpY-Eq7PE6f30mxno58y7cHM-kMX-p_jOk1_TPuQYhSna3JEidGX26I-DzkWuB-FBB2Zq4.AT1_bOok1pTC",
+      };
+    </script>
   </head>
   <body>
-    <div id="viewDiv"></div>
+    <calcite-shell>
+      <calcite-navigation slot="header">
+        <calcite-navigation-logo
+          heading="Distance Calculator"
+          icon="map-pin"
+          slot="logo"
+        ></calcite-navigation-logo>
 
-    <!-- ArcGIS Maps SDK for JavaScript -->
-    <script src="https://js.arcgis.com/4.26/"></script>
-    <!-- Calcite Components JS (ES module) -->
-    <script
-      type="module"
-      src="https://unpkg.com/@esri/calcite-components/dist/calcite/calcite.esm.js"
-    ></script>
-    <!-- App JS (initializes the map) -->
+        <div
+          slot="content-center"
+          style="display: flex; gap: 12px; align-items: center"
+        >
+          <calcite-combobox
+            id="port-selector"
+            placeholder="Select origin & destination ports..."
+            selection-mode="multiple"
+            max-items="8"
+            scale="l"
+            style="width: 500px"
+          ></calcite-combobox>
+          <calcite-button
+            id="calculate-btn"
+            icon-start="measure-line"
+            scale="l"
+          >
+            Calculate
+          </calcite-button>
+        </div>
+      </calcite-navigation>
+
+      <arcgis-map id="map" basemap="arcgis/imagery" zoom="4" center="0,20">
+        <arcgis-zoom position="top-left"></arcgis-zoom>
+        <arcgis-locate position="top-left"></arcgis-locate>
+     
+        
+      </arcgis-map>
+    </calcite-shell>
+
     <script src="/static/js/map.js"></script>
   </body>
 </html>
