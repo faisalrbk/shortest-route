@@ -5,12 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Shortest Route</title>
 
-    <!-- Single script — everything included (core + map-components + calcite) -->
     <script type="module" src="https://js.arcgis.com/5.0/"></script>
 
     <style>
-      html,
-      body {
+      html, body {
         margin: 0;
         padding: 0;
         height: 100%;
@@ -23,26 +21,160 @@
         height: 100%;
         flex: 1;
       }
+
+      /* ── Dialog result rows ── */
+      .result-section {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+      .route-summary {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 12px 0;
+        font-size: 14px;
+        font-weight: 500;
+      }
+      .route-summary calcite-icon {
+        flex-shrink: 0;
+      }
+      .route-port {
+        flex: 1;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      .stat-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 8px;
+      }
+      .stat-card {
+        background: var(--calcite-color-background);
+        border: 1px solid var(--calcite-color-border-3);
+        border-radius: 6px;
+        padding: 10px 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+      }
+      .stat-label {
+        font-size: 11px;
+        color: var(--calcite-color-text-3);
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+      .stat-value {
+        font-size: 16px;
+        font-weight: 600;
+        color: var(--calcite-color-text-1);
+      }
+      .duration-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 8px;
+        margin-top: 4px;
+      }
     </style>
+
     <script>
       var esriConfig = {
-        apiKey:
-          "AAPTxy8BH1VEsoebNVZXo8HurJ4OtrIn0er_IZWYxlE4RtW8u6P1z7B3ah8P3TOhJIqvI701l8IsWNaTzxE3UUVjMeAFBwxGqyUPaJCOO-7aIFECet3csLjfzQJhvt0SHFsomEsjX0lOxXR3qO3uu17gN_YEYCpBUWrjikzbBRpY-Eq7PE6f30mxno58y7cHM-kMX-p_jOk1_TPuQYhSna3JEidGX26I-DzkWuB-FBB2Zq4.AT1_bOok1pTC",
+        apiKey: "AAPTxy8BH1VEsoebNVZXo8HurJ4OtrIn0er_IZWYxlE4RtW8u6P1z7B3ah8P3TOhJIqvI701l8IsWNaTzxE3UUVjMeAFBwxGqyUPaJCOO-7aIFECet3csLjfzQJhvt0SHFsomEsjX0lOxXR3qO3uu17gN_YEYCpBUWrjikzbBRpY-Eq7PE6f30mxno58y7cHM-kMX-p_jOk1_TPuQYhSna3JEidGX26I-DzkWuB-FBB2Zq4.AT1_bOok1pTC",
       };
     </script>
   </head>
   <body>
     <calcite-shell>
-      <calcite-alert
-        id="port-alert"
-        kind="warning"
-        label="Port selection"
-        placement="bottom"
-      >
-        <div slot="message">
-          Both ports selected. Clear one to select a new port.
-        </div>
+
+      <!-- ── Warning alert ── -->
+      <calcite-alert id="port-alert" kind="warning" label="Port selection" placement="bottom">
+        <div slot="message">Both ports selected. Clear one to select a new port.</div>
       </calcite-alert>
+
+      <!-- ── Route result dialog ── -->
+      <calcite-dialog
+        id="route-dialog"
+        heading="Sea Route Result"
+        description="Shortest navigable path between selected ports"
+        modal
+        scale="m"
+        width-scale="m"
+      >
+
+        <!-- Route summary header -->
+        <div class="result-section">
+          <div class="route-summary">
+            <calcite-icon icon="pin-tear-f" scale="s" style="color: var(--calcite-color-status-success)"></calcite-icon>
+            <span class="route-port" id="dlg-origin">—</span>
+            <calcite-icon icon="arrow-right" scale="s"></calcite-icon>
+            <calcite-icon icon="map-pin" scale="s" style="color: var(--calcite-color-status-danger)"></calcite-icon>
+            <span class="route-port" id="dlg-destination">—</span>
+          </div>
+
+          <!-- Distance stats -->
+          <calcite-block heading="Distance" open>
+            <calcite-icon slot="icon" icon="measure-line" scale="s"></calcite-icon>
+            <div class="stat-grid">
+              <div class="stat-card">
+                <span class="stat-label">Nautical Miles</span>
+                <span class="stat-value" id="dlg-nm">—</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-label">Kilometers</span>
+                <span class="stat-value" id="dlg-km">—</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-label">Miles</span>
+                <span class="stat-value" id="dlg-mi">—</span>
+              </div>
+            </div>
+          </calcite-block>
+
+          <!-- Duration stats -->
+          <calcite-block heading="Estimated Transit" open>
+            <calcite-icon slot="icon" icon="clock" scale="s"></calcite-icon>
+            <div class="duration-grid">
+              <div class="stat-card">
+                <span class="stat-label">Days</span>
+                <span class="stat-value" id="dlg-days">—</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-label">Hours</span>
+                <span class="stat-value" id="dlg-hours">—</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-label">Vessel Speed</span>
+                <span class="stat-value" id="dlg-speed">—</span>
+              </div>
+            </div>
+          </calcite-block>
+
+          <calcite-notice open icon scale="s">
+            <div slot="message">
+              Route is for visualisation only — not for navigation purposes.
+            </div>
+          </calcite-notice>
+        </div>
+
+        <!-- Footer -->
+        <calcite-button
+          slot="footer-end"
+          appearance="outline"
+          kind="neutral"
+          icon-start="x"
+          onclick="document.getElementById('route-dialog').open = false"
+        >Close</calcite-button>
+
+        <calcite-button
+          slot="footer-end"
+          icon-start="map-pin"
+          onclick="document.getElementById('route-dialog').open = false"
+        >View on Map</calcite-button>
+
+      </calcite-dialog>
+
+      <!-- ── Top navigation ── -->
       <calcite-navigation slot="header">
         <calcite-navigation-logo
           heading="Distance Calculator"
@@ -50,10 +182,7 @@
           slot="logo"
         ></calcite-navigation-logo>
 
-        <div
-          slot="content-center"
-          style="display: flex; gap: 12px; align-items: center"
-        >
+        <div slot="content-center" style="display: flex; gap: 12px; align-items: center">
           <calcite-combobox
             id="origin-port"
             placeholder="Origin port..."
@@ -72,24 +201,21 @@
             style="width: 220px"
           ></calcite-combobox>
 
-          <calcite-button
-            id="calculate-btn"
-            icon-start="measure-line"
-            scale="m"
-          >
+          <calcite-button id="calculate-btn" icon-start="measure-line" scale="m">
             Calculate
           </calcite-button>
         </div>
       </calcite-navigation>
 
+      <!-- ── Map ── -->
       <arcgis-map id="map" basemap="arcgis/imagery" zoom="4" center="0,20">
-        
-            <arcgis-expand slot="top-left" expand-tooltip="Basemap Gallery">
+        <arcgis-expand slot="top-left" expand-tooltip="Basemap Gallery">
           <arcgis-basemap-gallery />
         </arcgis-expand>
         <arcgis-zoom slot="top-left"></arcgis-zoom>
         <arcgis-locate slot="top-left"></arcgis-locate>
       </arcgis-map>
+
     </calcite-shell>
 
     <script src="/static/js/map.js"></script>
